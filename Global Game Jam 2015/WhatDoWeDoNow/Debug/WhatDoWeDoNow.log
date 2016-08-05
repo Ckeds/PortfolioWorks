@@ -1,0 +1,41 @@
+﻿Build started 1/25/2015 3:27:03 PM.
+     1>Project "D:\Users\hxs1151\Desktop\GameJam\WhatDoWeDoNow\WhatDoWeDoNow\WhatDoWeDoNow.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\Users\hxs1151\Desktop\GameJam\WhatDoWeDoNow\WhatDoWeDoNow\\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt BombGame.cpp Game.cpp ImageLoader.cpp Main.cpp PlatformerGame.cpp Primitive.cpp
+         Primitive.cpp
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\primitive.cpp(117): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\primitive.cpp(122): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\primitive.cpp(123): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\primitive.cpp(126): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\primitive.cpp(128): warning C4018: '<' : signed/unsigned mismatch
+         PlatformerGame.cpp
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\platformergame.cpp(10): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\platformergame.cpp(192): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\platformergame.cpp(258): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\platformergame.cpp(264): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\platformergame.cpp(270): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\platformergame.cpp(345): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+         Main.cpp
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\main.cpp(15): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         ImageLoader.cpp
+         Game.cpp
+         BombGame.cpp
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\bombgame.cpp(238): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\bombgame.cpp(239): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\users\hxs1151\desktop\gamejam\whatdowedonow\whatdowedonow\bombgame.cpp(242): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\hxs1151\Desktop\GameJam\WhatDoWeDoNow\Debug\WhatDoWeDoNow.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\Users\hxs1151\Desktop\GameJam\WhatDoWeDoNow\WhatDoWeDoNow\\lib opengl32.lib glu32.lib glew32.lib glfw3.lib SOIL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\hxs1151\Desktop\GameJam\WhatDoWeDoNow\Debug\WhatDoWeDoNow.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\hxs1151\Desktop\GameJam\WhatDoWeDoNow\Debug\WhatDoWeDoNow.lib" /MACHINE:X86 Debug\BombGame.obj
+         Debug\Game.obj
+         Debug\ImageLoader.obj
+         Debug\Main.obj
+         Debug\PlatformerGame.obj
+         Debug\Primitive.obj
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         WhatDoWeDoNow.vcxproj -> D:\Users\hxs1151\Desktop\GameJam\WhatDoWeDoNow\Debug\WhatDoWeDoNow.exe
+     1>Done Building Project "D:\Users\hxs1151\Desktop\GameJam\WhatDoWeDoNow\WhatDoWeDoNow\WhatDoWeDoNow.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.63
