@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UFT-8"?>
+<level>
+	<platform>
+		<x>0</x>
+		<y>312</y>
+		<width>640</width>
+		<height>168</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>618</x>
+		<y>0</y>
+		<width>22</width>
+		<height>312</height>
+		<type>goal</type>
+	</platform>
+	<textbox>
+		<x>0</x>
+		<y>0</y>
+		<width>640</width>
+		<height>72</height>
+		<text>Hey. Can you hear me? Are you okay?</text>
+		<text>You look a little broken.</text>
+		<text>Can you move?</text>
+		<text>That's good.</text>
+	</textbox>
+	<startPosition>
+		<x>101</x>
+		<y>292</y>
+	</startPosition>
+</level>

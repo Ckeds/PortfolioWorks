@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<platform>
+		<x>0</x>
+		<y>85</y>
+		<width>216</width>
+		<height>395</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>417</x>
+		<y>85</y>
+		<width>223</width>
+		<height>395</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>624</x>
+		<y>0</y>
+		<width>17</width>
+		<height>85</height>
+		<type>fakeGoal</type>
+	</platform>
+	<platform>
+		<x>216</x>
+		<y>481</y>
+		<width>201</width>
+		<height>18</height>
+		<type>goal</type>
+	</platform>
+	<platform>
+		<x></x>
+		<y></y>
+		<width></width>
+		<height></height>
+		<type></type>
+	</platform>
+	<startPosition>
+		<x>0</x>
+		<y>65</y>
+	</startPosition>
+</level>

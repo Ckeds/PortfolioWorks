@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<unitTypes>
+  <army name="red">
+    <infantry attack="15" defense="7" range="3" movement="3" collision="1"/>
+    <tank attack="22"/>
+    <spy attack="10"/>
+  </army>
+  <army name="blue">
+    <infantry attack="15" defense="7" range="3" movement="3" collision="1"/>
+    <tank />
+    <spy />
+  </army>
+</unitTypes>

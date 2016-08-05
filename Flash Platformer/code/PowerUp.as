@@ -1,0 +1,1 @@
+﻿package code {		import flash.display.MovieClip;		public class PowerUp extends MovieClip {				var powerUpType:String;				public function PowerUp() {			// constructor code		}	}	}

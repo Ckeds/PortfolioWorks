@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Death Before Dishonor</title>
+	<script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
+	<script>
+		var stage, rect1, rect2, speed1, speed2, image, imageX, img, sprite, samurai;
+		var acceleration1 = 0;
+		var acceleration2 = -0.5;
+		var hpPlayer, hpCom;
+		var execute, death, seppuku, gmover = false;
+			function init() {
+			stage = new createjs.Stage("demoCanvas");
+			image = new createjs.Bitmap("Background.png");
+			imageX = new createjs.Bitmap("Background.png");
+			imageMoon = new createjs.Bitmap("MoonAndStars.png");
+			stage.addChild(image);
+			stage.addChild(imageX);
+			stage.addChild(imageMoon);
+			img = new Image();
+			img.src = "EnemyRunExtended.png";
+			img.onload = handleImageLoad;
+			imageX.x = 640;
+			rect1 = new createjs.Shape();
+			rect2 = new createjs.Shape();
+			hpBarP = new createjs.Shape();
+			hpBarC = new createjs.Shape();
+			speed1 = 0.0;
+			speed2 = 0.0;
+			hpPlayer = 50;
+			hpPlayerFull = 50;
+			hpCom = 50;
+			hpComFull = 50;
+			rect1.graphics.beginFill("red").drawRect(0, 0, 64, 64);
+			rect2.graphics.beginFill("green").drawRect(0, 0, 64, 64);
+			rect1.alpha = 0;
+			rect2.alpha = 0;
+			hpBarP.graphics.beginFill("green").drawRect(0, 0, 100, 20);
+			hpBarC.graphics.beginFill("green").drawRect(0, 0, 100, 20);
+			rect1.x = 100;
+			rect2.x = stage.canvas.width - 100;
+			rect1.y = stage.canvas.height * 3 / 4;
+			rect2.y = stage.canvas.height * 3 / 4;
+			stage.addChild(rect1);
+			stage.addChild(rect2);
+			stage.addChild(hpBarP);
+			stage.addChild(hpBarC);
+			handlesamuraiImageLoad();
+			samurai.x = rect1.x;
+			samurai.y = rect1.y;
+			hpBarC.x = stage.canvas.width - 100;	
+			createjs.Ticker.on("tick", tick);
+			createjs.Ticker.setFPS(60);
+			this.document.onkeydown = keyPressed; 
+		}
+		function handlesamuraiImageLoad()
+		{
+			var spriteSheet = new createjs.SpriteSheet(
+			{
+				images: ["PlayerIdle.png", "PlayerSwing.png", "PlayerSeppuku.png"],
+				frames: {width: 64, height: 64, regX: 10, regY: 15},
+				animations: {
+					idle: [0, 0, "idle"],
+					swing: [1, 1, "idle"],
+					seppuku: [2, 4]	
+				},
+			});
+			samurai = new createjs.Sprite(spriteSheet);
+			samurai.gotoAndPlay("idle");
+			samurai.framerate = 1;
+			stage.addChild(samurai);
+		}
+		function handleImageLoad()
+		{
+			var spriteSheet = new createjs.SpriteSheet(
+			{
+				images: [img],
+				frames: {width: 128, height: 64, regX: 10, regY: 15},
+				animations: {
+					advance: [0, 5, "advance"]
+				},
+			});
+			sprite = new createjs.Sprite(spriteSheet);
+			sprite.gotoAndPlay("advance");
+			sprite.framerate = 20;
+			stage.addChild(sprite);
+		}
+		function tick(event) {
+			if (!execute && !seppuku && !death && !gmover)
+			{
+				if (checkIntersection(rect1,rect2,60))
+				{
+					console.log(samurai.currentAnimation);
+					speed2 = -speed2;
+					if(samurai.currentAnimation == "idle")
+					{
+						hpCom -=4;
+						samurai.gotoAndPlay("swing");
+					}
+					if(hpCom < 0) {death = true; hpCom = 0;}
+					hpPlayer -=3; 
+					console.log(hpCom);
+					drawBar(hpBarP,hpPlayer);
+					drawBar(hpBarC,hpCom);
+				}
+				rect1.x = rect1.x + speed1;
+				rect2.x = rect2.x + speed2;
+				speed1 = speed1 + acceleration1;
+				speed2 = speed2 + acceleration2;
+				if (Math.abs(speed1) > 20) {speed1 = 20}
+				if (Math.abs(speed2) > 20) {speed2 = -20}
+				if (rect1.x > stage.canvas.width) {rect1.x = 0; }
+				if (rect1.x < 0) {rect1.x = stage.canvas.width;}
+				sprite.x = rect2.x;
+				sprite.y = rect2.y;
+				if(samurai.currentFrame == 4) {seppuku = true; hpBarP.graphics.beginFill("red").drawRect(0, 0, 100, 20);}
+				if(hpPlayer < 0 && !seppuku){gmover = true;}
+				stage.update(event); 
+			}
+			else if(execute)
+			{
+				rect2.y -= 2;
+				rect2.x += 8;
+				rect2.rotation +=5;
+				sprite.scale += .01;
+				if(image.x <= -640) {image.x = 640;}
+				if(imageX.x <= -640) {imageX.x = 640;}
+				image.x -= 10;
+				imageX.x -= 10;
+				if(rect2.x > stage.canvas.width + 200)
+				{
+					execute = false;
+					hpCom = 50; 
+					rect2.x = stage.canvas.width + 50; 
+					speed2 = 0;
+					rect2.rotation = 0;
+					sprite.scale = 1;
+					rect2.y = stage.canvas.height * 3 / 4;
+					hpBarC.graphics.beginFill("green").drawRect(0, 0, 100, 20);
+				}
+				sprite.x = rect2.x;
+				sprite.y = rect2.y;
+				sprite.rotation = rect2.rotation;
+				stage.update(event); 
+			}
+			else if(death)
+			{
+				rect2.x = rect2.x + speed2;
+				sprite.x = rect2.x;
+				sprite.alpha -= .04;
+				if (sprite.alpha <= 0) {hpCom = 50; rect2.x = stage.canvas.width + 100;
+								 speed2 = 0; sprite.alpha = 1; death = false;
+								 hpBarC.graphics.beginFill("green").drawRect(0, 0, 100, 20);}
+				stage.update(event); 
+			} 
+			else if(gmover)
+			{
+				stage.autoClear = true;
+				stage.removeAllChildren();
+				var text = new createjs.Text("Game Over", "bold 36px Arial", "black")
+				text.x = stage.canvas.width / 2;
+				text.y = stage.canvas.height / 2;
+				stage.addChild(text);
+				stage.update();
+			}
+			else
+			{
+				samurai.stop();
+				if(samurai.x > 99 && samurai.x < 700) {samurai.x += 8; rect1.x = -50}
+				else {rect1.x += 5; samurai.x = rect1.x; samurai.gotoAndPlay("idle");}
+				if(image.x >= 640) {image.x = -640;}
+				if(imageX.x >= 640) {imageX.x = -640;}
+				image.x += 8;
+				imageX.x += 8;
+				
+				if (rect1.x == 100) {
+					seppuku = false;
+					hpPlayer = hpPlayerFull;
+					hpBarP.graphics.beginFill("green").drawRect(0, 0, 100, 20);
+				}
+				stage.update(event); 
+			}
+		}
+		function checkIntersection(a,b,dis) {
+	   	if (Math.abs(a.x - b.x) <= dis) {return true;}
+   		else {return false;}
+   	 	}	
+		function drawBar(bar,hp)
+		{
+			var remaining = hp / 50;
+   			bar.graphics.beginFill("red").drawRect(0, 0, 100, 20);
+   			bar.graphics.beginFill("green").drawRect(0, 0, remaining * 100, 20);
+   			bar.graphics.endFill;
+   		}
+   		function keyPressed(event) {
+   			console.log("key is pressed");
+       	 	switch(event.keyCode) {
+           	   	case 88: 
+	     			samurai.gotoAndPlay("seppuku");
+           			break;
+           		case 67:
+	     			if (checkIntersection(rect1,rect2,130) && (hpCom/hpComFull) * 100 < 30)
+    	  			{
+    	  				samurai.gotoAndPlay("swing");
+    	  				execute = true;
+    	  				hpCom = 0;
+    	  				hpPlayer += 5;
+    	  				if(hpPlayer > hpPlayerFull){hpPlayer = hpPlayerFull;}
+    	  				drawBar(hpBarP,hpPlayer);
+    	  				hpBarC.graphics.beginFill("red").drawRect(0, 0, 100, 20);
+    	  			}
+         			break;
+        	}
+        }
+	</script>
+</head>
+<body onLoad="init();">
+	<canvas id="demoCanvas" width="640" height="480">
+		alternate content
+	</canvas>
+</body>
+</html>

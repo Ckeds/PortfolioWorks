@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+  <map id="0" size ="20">
+    <tiles>
+      <tile length="400" terrain="grass" />
+    </tiles>
+    <spawns>
+      <tile location="0,0,5,5" />
+      <tile location="10,10,15,15" />
+    </spawns>    
+  </map>

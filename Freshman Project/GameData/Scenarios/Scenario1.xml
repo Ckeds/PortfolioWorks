@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<scenario name="Test1" armies="2">
+    <map file="maps.xml" thumbnail="maps.png" />
+	<description text="A generic battle created to prove this works"/>
+	<army team="0">
+		<unit type="infantry" x="0" y="0" direction="E"/>
+		<unit type="infantry" x="1" y="0" direction="E"/>
+		<unit type="infantry" x="0" y="1" direction="E"/>
+		<unit type="infantry" x="1" y="1" direction="E"/>
+	</army>
+	<army team="1">
+		<unit type="infantry" x="18" y="18" direction="N"/>
+		<unit type="infantry" x="19" y="18" direction="N"/>
+		<unit type="infantry" x="18" y="19" direction="N"/>
+		<unit type="infantry" x="19" y="19" direction="N"/>
+	</army>
+</scenario>

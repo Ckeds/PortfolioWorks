@@ -1,0 +1,6 @@
+\\banner.main.ad.rit.edu\students\rwh4375\igmprofile\documents\visual studio 2010\Projects\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditorContent\obj\x86\Debug\ResolveAssemblyReference.cache

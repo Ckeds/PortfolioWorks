@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<platform>
+		<x>0</x>
+		<y>0</y>
+		<width>37.3</width>
+		<height>476.7</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>200.7</x>
+		<y>0</y>
+		<width>439.3</width>
+		<height>225.3</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>0</x>
+		<y>443</y>
+		<width>640</width>
+		<height>37</height>
+		<type>legBreaker</type>
+	</platform>
+	<platform>
+		<x>269</x>
+		<y>414</y>
+		<width>371</width>
+		<height>30</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>311.3</x>
+		<y>384</y>
+		<width>328.7</width>
+		<height>30</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>357.3</x>
+		<y>354</y>
+		<width>282.7</width>
+		<height>30</height>
+		<type>platform</type>
+	</platform>
+	<textbox>
+		<x>0</x>
+		<y>0</y>
+		<width>640</width>
+		<height>72</height>
+		<text>There are times you'll fall and lose things important to you.</text>
+		<text>Be careful.</text>
+	</textbox>
+	<platform>
+		<x>622.7</x>
+		<y>225.3</y>
+		<width>17.3</width>
+		<height>128.7</height>
+		<type>goal</type>
+	</platform>
+	<startPosition>
+		<x>116.3</x>
+		<y>0</y>
+	</startPosition>
+</level>

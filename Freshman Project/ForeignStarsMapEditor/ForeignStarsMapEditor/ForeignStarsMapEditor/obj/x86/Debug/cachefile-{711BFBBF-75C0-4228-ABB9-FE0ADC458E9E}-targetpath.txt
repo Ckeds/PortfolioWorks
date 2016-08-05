@@ -1,0 +1,5 @@
+Content\Sprites\TileA.xnb
+Content\Sprites\TileB.xnb
+Content\Sprites\TileC.xnb
+Content\Sprites\Spritesheet.xnb
+Content\Fonts\Font.xnb

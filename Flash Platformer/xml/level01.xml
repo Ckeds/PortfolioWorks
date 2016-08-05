@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UFT-8"?>
+<level>
+	<platform>
+		<x>0</x>
+		<y>312</y>
+		<width>640</width>
+		<height>168</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>379</x>
+		<y>292</y>
+		<width>20</width>
+		<height>20</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>422</x>
+		<y>272</y>
+		<width>20</width>
+		<height>40</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>442</x>
+		<y>292</y>
+		<width>20</width>
+		<height>20</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>462</x>
+		<y>248</y>
+		<width>178</width>
+		<height>64</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>618</x>
+		<y>0</y>
+		<width>22</width>
+		<height>248</height>
+		<type>goal</type>
+	</platform>
+	<textbox>
+		<x>0</x>
+		<y>0</y>
+		<width>640</width>
+		<height>72</height>
+		<text>Can you hop on up over there?</text>
+		<text>Good! You're doing great.</text>
+	</textbox>
+	<startPosition>
+		<x>101</x>
+		<y>292</y>
+	</startPosition>
+</level>

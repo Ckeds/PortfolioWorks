@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<platform>
+		<x>0</x>
+		<y>0</y>
+		<width>13</width>
+		<height>378</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>0</x>
+		<y>443</y>
+		<width>640</width>
+		<height>37</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>627</x>
+		<y>0</y>
+		<width>13</width>
+		<height>378</height>
+		<type>platform</type>
+	</platform>
+	<platform>
+		<x>627</x>
+		<y>378</y>
+		<width>13</width>
+		<height>66</height>
+		<type>goal</type>
+	</platform>
+	<enemy>
+		<x>105</x>
+		<y>100</y>
+		<width>150</width>
+		<height>100</height>
+		<type>demon1</type>
+	</enemy>
+	<enemy>
+		<x>327</x>
+		<y>358</y>
+		<width>150</width>
+		<height>150</height>
+		<type>demon2</type>
+	</enemy>
+	<enemy>
+		<x>420</x>
+		<y>328</y>
+		<width>170</width>
+		<height>170</height>
+		<type>demon3</type>
+	</enemy>
+	<textbox>
+		<x>0</x>
+		<y>0</y>
+		<width>640</width>
+		<height>72</height>
+		<text>You must face your inner demons.</text>
+		<text>Don't let them overtake you.</text>
+		<text>Don't give up, keep fighting.</text>
+	</textbox>
+	<startPosition>
+		<x>0</x>
+		<y>378</y>
+	</startPosition>
+</level>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scenario>
+  <value scenario ="1" />
+  <map file="Test.xml" thumbnail="test.png"/>
+  <amry1>
+    <unit unit ="Infantry" x ="0" y ="0"/>
+    <unit unit ="Infantry" x ="1" y ="0"/>
+    <unit unit ="Infantry" x ="0" y ="1"/>
+    <unit unit ="Infantry" x ="1" y ="1"/>
+  </amry1>
+  <break></break>
+  <army2>
+    <unit unit ="Infantry" x ="2" y ="0"/>
+    <unit unit ="Infantry" x ="2" y ="1"/>
+    <unit unit ="Infantry" x ="2" y ="2"/>
+    <unit unit ="Infantry" x ="1" y ="2"/>
+    <unit unit ="Infantry" x ="0" y ="2"/>
+    <unit unit ="Infantry" x ="0" y ="3"/>
+    <unit unit ="Infantry" x ="1" y ="3"/>
+    <unit unit ="Infantry" x ="2" y ="3"/>
+    <unit unit ="Infantry" x ="3" y ="3"/>
+    <unit unit ="Infantry" x ="3" y ="2"/>
+    <unit unit ="Infantry" x ="3" y ="1"/>
+    <unit unit ="Infantry" x ="3" y ="0"/>
+  </army2>
+    <description text="Made to piss off the red team" />
+
+</Scenario>

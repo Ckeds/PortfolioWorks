@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Becca</title>
+	<script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
+	<script>
+		var stage, rect1, rect2, speed1, speed2, image, imageX, img, sprite, samurai;
+		var gravity = 0.6;
+		var hpPlayer, hpCom;
+		var execute, death, mDown, gmover = false;
+		function init() {
+			stage = new createjs.Stage("gameBox");
+			rect1 = new createjs.Shape();
+			rect2 = new createjs.Shape();
+			rect1.graphics.beginFill("red").drawRect(0, 0, 64, 64);
+			rect2.graphics.beginFill("green").drawRect(0, 0, 64, 64);
+			stage.addChild(rect1);
+			stage.addChild(rect2);
+			rect1.x = 20;
+			rect1.y = 0;
+			rect2.x = (stage.width / 2) - 32;
+			rect2.y = 336;
+			speed1 = 0;
+			createjs.Ticker.on("tick", tick);
+			createjs.Ticker.setFPS(60);
+			stage.addEventListener("stagemousedown", handleClick);
+			stage.addEventListener("stagemouseup", handleUnclick);
+		}
+		function tick(event) {
+			speed1 += gravity
+			rect1.y += speed1;
+			if(rect1.y >= 400)
+			{
+				rect1.y = 400;
+				speed1 = 0;
+			}
+			stage.update(event);
+		}
+		function handleClick(ev) {
+			if(!mDown)
+			{
+			    console.log("MouseClick")
+    			rect1.x = ev.stageX - 32;
+    			rect1.y = ev.stageY - 32;
+    			speed1 = 0;
+    			mDown = true;
+    		}
+    	}
+    	function handleUnclick(ev) {
+		    console.log("MouseUnclick")
+		    mDown = false;
+    	}
+	</script>
+		<style>
+		#gameBox{
+			margin: auto;
+			width: 640px;
+		}
+	</style>
+</head>
+<body onLoad="init();">
+	<canvas id="gameBox" width="640" height="480">
+		Game isn't working currently. Please try again later
+	</canvas>
+</body>
+</html>

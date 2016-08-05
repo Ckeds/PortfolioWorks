@@ -1,0 +1,1 @@
+﻿package code {		import flash.display.MovieClip;			public class GoalKey extends PowerUp {						public function GoalKey() {			// constructor code		}	}	}

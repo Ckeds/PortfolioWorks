@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<map size="16" id="CHEEZ">
+	<tiles>
+		<tile terrain="grass" length="70" />
+		<tile terrain="SWroadgrass" length="6" />
+		<tile terrain="grass" length="10" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="15" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="5" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="10" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="4" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="10" />
+		<tile terrain="SWroadgrass" length="4" />
+		<tile terrain="grass" length="2" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="8" />
+		<tile terrain="SWroadgrass" length="9" />
+		<tile terrain="grass" length="3" />
+		<tile terrain="SWroadgrass" length="6" />
+		<tile terrain="grass" length="4" />
+		<tile terrain="SWroadgrass" length="2" />
+		<tile terrain="grass" length="4" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="8" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="6" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="6" />
+		<tile terrain="SWroadgrass" length="2" />
+		<tile terrain="grass" length="7" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="5" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="10" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="3" />
+		<tile terrain="SWroadgrass" length="1" />
+		<tile terrain="grass" length="12" />
+		<tile terrain="SWroadgrass" length="4" />
+		<tile terrain="grass" length="8" />
+	</tiles>
+	<spawns>
+		<tile location="0,0,1,16" />
+		<tile location="15,0,16,16" />
+	</spawns>
+</map>

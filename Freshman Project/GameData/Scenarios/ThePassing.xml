@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenario name="ThePassing" armies="2">
+    <map file="Passing.xml" thumbnail="passing.PNG" />
+	 <description text="Desert raiders attack an army caravan."/>
+  <army team="0">
+    <unit type="infantry" x="0" y="0" direction="E"/>
+    <unit type="infantry" x="0" y="1" direction="E"/>
+    <unit type="infantry" x="0" y="2" direction="E"/>
+    <unit type="infantry" x="1" y="0" direction="E"/>
+    <unit type="infantry" x="1" y="1" direction="E"/>
+    <unit type="infantry" x="1" y="2" direction="E"/>
+    <unit type="infantry" x="2" y="0" direction="E"/>
+    <unit type="infantry" x="2" y="1" direction="E"/>
+    <unit type="infantry" x="2" y="2" direction="E"/>
+  </army>
+  <army team="1">
+    <unit type="infantry" x="19" y="8" direction="E"/>
+    <unit type="infantry" x="19" y="9" direction="E"/>
+    <unit type="infantry" x="18" y="8" direction="E"/>
+    <unit type="infantry" x="18" y="9" direction="E"/>
+    <unit type="infantry" x="17" y="8" direction="E"/>
+    <unit type="infantry" x="17" y="9" direction="E"/>
+    <unit type="infantry" x="16" y="8" direction="E"/>
+    <unit type="infantry" x="16" y="9" direction="E"/>
+  </army>
+ 
+</scenario>

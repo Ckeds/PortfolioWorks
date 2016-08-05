@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!-- By William Powell for Project 3 -->
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Joe, Follow The Money</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="makePie.js"></script>
+	<script>
+		//this block of code is all about importing the JSON file
+		var comparee = "m";
+		var money = 0;
+		var myData = [10.5,30,20,44.5,40,15];
+		var myColor = ["#ECD078","#D95B43","#C02942","#542437","#53777A","#8FBC8F"];
+		var jsonData;
+		var male = new Array(), female = new Array(), questionable = new Array();
+		var yes = new Array(), no = new Array();
+		var student = new Array(), colleague = new Array(), peer = new Array(), 
+						acquaintance = new Array(), family = new Array(), stranger = new Array();
+		$.getJSON("JoeData.json", function(data){
+			jsonData = data;
+			for(var i = 0; i < jsonData.length; i ++)
+			{
+				if(jsonData[i]["Sex"] == "M")
+				{
+					male[male.length] = jsonData[i];
+				}
+				else if(jsonData[i]["Sex"] == "F")
+				{
+					female[female.length] = jsonData[i];
+				}
+				else
+				{
+					questionable[questionable.length] = jsonData[i];
+				}
+				if(jsonData[i]["JoeKnows"] == "1")
+				{
+					yes[yes.length] = jsonData[i];
+				}
+				else
+				{
+					no[no.length] = jsonData[i];
+				}
+				if(jsonData[i]["Relation"] == "Student")
+				{
+					student[student.length] = jsonData[i];
+				}
+				else if(jsonData[i]["Relation"] == "Colleague")
+				{
+					colleague[colleague.length] = jsonData[i];
+				}
+				else if(jsonData[i]["Relation"] == "Peer")
+				{
+					peer[peer.length] = jsonData[i];
+				}
+				else if(jsonData[i]["Relation"] == "Acquaintance")
+				{
+					acquaintance[acquaintance.length] = jsonData[i];
+				}
+				else if(jsonData[i]["Relation"] == "Family")
+				{
+					family[family.length] = jsonData[i];
+				}
+				else
+				{
+					stranger[stranger.length] = jsonData[i];
+				}
+				money += jsonData[i]["PledgeAmount"];
+			}
+		});
+	</script>	
+	
+	<style>
+		body, html {
+			margin: 0 auto;
+			padding: 10px;
+			font-family: Arial;
+			min-width: 800px;
+			}
+			#container {
+			  padding-left: 200px;   /* LC width */
+			  padding-right: 200px;  /* RC width */
+			}
+			#container .column {
+			  position: relative;
+			  float: left;
+			}
+			#center {
+			  width: 100%;
+			}
+			#left {
+			  width: 200px;          /* LC width */
+			  margin-left: -100%;
+			  right: 200px;          /* LC width */
+			  
+			}
+			#right {
+			  width: 200px;          /* RC width */
+			  margin-right: -200px;  /* RC width */
+			}
+			#footer {
+  			  clear: both;
+  			  background-color: #000000;
+  			}
+			button
+			{
+			  height: 50px;
+			  width: 200px;
+			  font-size: 11pt;
+			  font-family: 'Voltaire', sans-serif;
+			  display: inline-block;
+			}
+			.leftB
+			{
+			  height: 100px;
+			}
+			.rightB
+			{
+			  width: 90px;
+			}
+			.marked
+			{
+			  background-color: #bbbbbb;
+			  border: 1px black solid;
+			}
+	</style>
+<body>
+<div align="center">
+<div id="header"></div><div id="container">
+  <div id="center" class="column">
+  <canvas id="canvas" width="400" height="300">
+  This text is displayed if your browser does not support HTML5 Canvas.
+  </canvas></div>
+  <div id="left" class="column">
+  <button id="gender" class="leftB" >Gender</button>
+  <button id="joeKnows" class="leftB">Does Joe Know Them?</button>
+  <button id="joeRelation" class="leftB">Joe's Relation to Said Person</button>
+  </div>
+  <div id="right" class="column">
+  <button id="male" class="rightB">Male
+  </button><button id="female" class="rightB">Female
+  </button><button id="questionable" class="rightB">Questionable
+  </button><button id="yes" class="rightB">Joe Knows Them
+  </button><button id="no" class="rightB">Joe Doesn't Know Them
+  </button><button id="student" class="rightB">Student
+  </button><button id="colleague" class="rightB">Colleague
+  </button><button id="peer" class="rightB">Peer
+  </button><button id="acquaintance" class="rightB">Acquaintance
+  </button><button id="family" class="rightB">Family
+  </button><button id="stranger" class="rightB">Stranger
+  </button><button id="money" class="rightB">Money Given</button>
+  </div></div></div>
+  <div id="footer" align="center">
+  </div>
+<script>
+	//Handles clicking of all the buttons
+	var comparables = [male, female, questionable];
+	$("#male").addClass("marked");
+	$("#gender").addClass("marked");
+	$("#gender").click(function() {
+		comparables = [male, female, questionable];	
+		clearLeft();
+		$("#gender").addClass("marked");
+	}); 
+	$("#joeKnows").click(function() {
+		comparables = [yes, no];	
+		clearLeft();
+		$("#joeKnows").addClass("marked");		
+	});  
+	$("#joeRelation").click(function() {			
+		comparables = [student, colleague, peer, acquaintance, family, stranger];
+		clearLeft();
+		$("#joeRelation").addClass("marked");	
+	});  
+	function clearLeft()
+	{
+		$("#gender").removeClass("marked");
+		$("#joeKnows").removeClass("marked");
+		$("#joeRelation").removeClass("marked");
+		newData();	
+	}
+	$("#male").click(function() {
+		comparee = "m";
+		clearRight();
+		$("#male").addClass("marked");			
+	}); 
+	$("#female").click(function() {	
+		comparee = "f";
+		clearRight();
+		$("#female").addClass("marked");		
+	}); 
+	$("#questionable").click(function() {		
+		comparee = "q";
+		clearRight();
+		$("#female").addClass("marked");	
+	}); 
+	$("#yes").click(function() {
+		comparee = "y";
+		clearRight();
+		$("#yes").addClass("marked");	
+	}); 
+	$("#no").click(function() {	
+		comparee = "n";	
+		clearRight();
+		$("#no").addClass("marked");	
+	}); 
+	$("#student").click(function() {	
+		comparee = "s";	
+		clearRight();
+		$("#student").addClass("marked");	
+	}); 
+	$("#colleague").click(function() {
+		comparee = "c";	
+		clearRight();
+		$("#colleague").addClass("marked");	
+	}); 
+	$("#peer").click(function() {		
+		comparee = "p";
+		clearRight();
+		$("#peer").addClass("marked");	
+	}); 
+	$("#acquaintance").click(function() {
+		comparee = "a";	
+		clearRight();
+		$("#acquaintance").addClass("marked");	
+	}); 
+	$("#family").click(function() {		
+		comparee = "fa";
+		clearRight();
+		$("#family").addClass("marked");	
+	}); 
+	$("#stranger").click(function() {	
+		comparee = "st";
+		clearRight();
+		$("#stranger").addClass("marked");	
+	}); 
+	$("#money").click(function() {	
+		comparee = "mo";
+		clearRight();
+		$("#money").addClass("marked");	
+	});
+	function clearRight()
+	{
+		$("#male").removeClass("marked");
+		$("#female").removeClass("marked");
+		$("#questionable").removeClass("marked");
+		$("#yes").removeClass("marked");
+		$("#no").removeClass("marked");
+		$("#student").removeClass("marked");
+		$("#colleague").removeClass("marked");
+		$("#peer").removeClass("marked");
+		$("#acquaintance").removeClass("marked");
+		$("#family").removeClass("marked");
+		$("#stranger").removeClass("marked");	
+		$("#money").removeClass("marked");	
+		newData();
+	}
+	//handles and calls for the pie chart to be drawn
+	function newData()
+	{
+		$("#footer").empty();
+		myData = [0,0,0,0,0,0];
+		if (comparee == "m")
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					if(arrayAssess[j]["Sex"] == "M")
+					{
+						myData[i]++;
+					}
+				}				
+			}
+		}
+		else if (comparee == "f")
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					if(arrayAssess[j]["Sex"] == "F")
+					{
+						myData[i]++;
+					}
+				}				
+			}
+		}
+		else if (comparee == "q")
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					if(arrayAssess[j]["Sex"] != "F" && arrayAssess[j]["Sex"] != "M")
+					{
+						myData[i]++;
+					}
+				}				
+			}
+		}
+		else if (comparee == "y")
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					if(arrayAssess[j]["JoeKnows"] == "1")
+					{
+						myData[i]++;
+					}
+				}				
+			}	
+		}
+		else if (comparee == "n")
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					if(arrayAssess[j]["JoeKnows"] != "1")
+					{
+						myData[i]++;
+					}
+				}				
+			}	
+		}
+		else if (comparee == "s")
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					if(arrayAssess[j]["Relation"] == "Student")
+					{
+						myData[i]++;
+					}
+				}			
+			}
+		}
+		else if (comparee == "c")
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					if(arrayAssess[j]["Relation"] == "Colleague")
+					{
+						myData[i]++;
+					}
+				}	
+			}
+		}
+		else if (comparee == "p")
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					if(arrayAssess[j]["Relation"] == "Peer")
+					{
+						myData[i]++;
+					}
+				}			
+			}
+		}
+		else if (comparee == "a")
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					if(arrayAssess[j]["Relation"] == "Acquaintance")
+					{
+						myData[i]++;
+					}
+				}			
+			}
+		}
+		else if (comparee == "fa")
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					if(arrayAssess[j]["Relation"] == "Family")
+					{
+						myData[i]++;
+					}
+				}				
+			}
+		}
+		else if (comparee == "st")
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					if(arrayAssess[j]["Relation"] == "-")
+					{
+						myData[i]++;
+					}
+				}				
+			}
+		}
+		else
+		{
+			for(var i = 0; i < comparables.length; i ++)
+			{
+				var arrayAssess = comparables[i];
+				for(var j = 0; j < arrayAssess.length; j ++)
+				{
+					myData[i] += arrayAssess[j]["PledgeAmount"];
+				}
+				myData[i] = parseFloat(myData[i].toFixed(2));
+			}
+			console.log(myData);
+		}
+		plotData();
+		//detailed data handled here
+		if (comparables.length == 3)
+		{
+			$("#footer").append("<p><font color=#ECD078>Male: " + myData[0] + "</font></p>");
+			$("#footer").append("<p><font color=#D95B43>Female: " + myData[1] + "</font></p>"); 
+			$("#footer").append("<p><font color=#C02942>Questionable: " + myData[2] + "</font></p>"); 
+			console.log("here");
+		}
+		else if (comparables.length == 2)
+		{
+			$("#footer").append("<p><font color=#ECD078>Yes: " + myData[0] + "</font></p>");
+			$("#footer").append("<p><font color=#D95B43>No: " + myData[1] + "</font></p>"); 
+		}
+		else
+		{
+			$("#footer").append("<p><font color=#ECD078>Student: " + myData[0] + "</font></p>");
+			$("#footer").append("<p><font color=#D95B43>Colleague " + myData[1] + "</font></p>"); 
+			$("#footer").append("<p><font color=#C02942>Peer: " + myData[2] + "</font></p>"); 
+			$("#footer").append("<p><font color=#542437>Acquaintance: " + myData[3] + "</font></p>");
+			$("#footer").append("<p><font color=#53777A>Family: " + myData[4] + "</font></p>"); 
+			$("#footer").append("<p><font color=#8FBC8F>Stranger: " + myData[5] + "</font></p>"); 
+		}
+		plotData();
+	}
+	
+</script>
+</div>
+</body>
+</head>

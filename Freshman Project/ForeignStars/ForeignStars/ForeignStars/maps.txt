@@ -1,0 +1,27 @@
+﻿TODO: Write up the readme for how maps work
+
+Map definitions use xml files in order to describe their structure in a human readable format.
+
+A map must be placed in the root it belongs, e.g. for battle maps, place the map definition in <BattleMaps></BattleMaps>
+
+an example map format is like so:
+
+<map id="0" size ="20">
+    <tile length="400" terrain="grass"></tile>
+    <spawn location="0,0,5,5"></spawn>
+  </map>
+
+  We start with a starting map tag <map>
+  <map> has attributes that describe the map
+  ID - the id of the map is the unique id assigned to the map to distinguish it from others when loading (or modifying)
+  Size - Maps are always square, so size defines the length and width of the map, in our example we have size="20" - this indicates
+  a map with a size square of 20x20, meaning an area of 400.
+
+  Inside the map tag, we have additional tags that describe the map
+  <tile> - <tile> describes the tiles on a map, and how long the tile is.
+		length - the length of the tile is its consecutive length, e.g. a length of 40 on a 20x20 map will place 2 rows of 20 tiles of the specified type
+		terrain - the terrain is the type of terrain that the tiles will represent
+
+
+Note to self= possibly include an "exempt" attribute for spawn areas, to indicate like a tree where they cannot spawn
+//make a minimum size for spawn points, os that all the units in an army can fit

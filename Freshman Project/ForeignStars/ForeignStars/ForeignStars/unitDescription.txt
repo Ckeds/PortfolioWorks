@@ -1,0 +1,16 @@
+﻿infantryN=2,0
+infantryE=0,0
+infantryS=3,0
+infantryW=1,0
+tankN=2,1
+tankE=0,1
+tankS=3,1
+tankW=1,1
+skimmerN=2,2
+skimmerE=0,2
+skimmerS=3,2
+skimmerW=1,2
+heliN=2,3
+heliE=0,3
+heliS=3,3
+heliW=1,3

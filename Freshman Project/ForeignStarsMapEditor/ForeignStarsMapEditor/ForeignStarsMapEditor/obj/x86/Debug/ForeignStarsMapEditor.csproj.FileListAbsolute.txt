@@ -1,0 +1,65 @@
+\\banner.main.ad.rit.edu\students\rwh4375\igmprofile\documents\visual studio 2010\Projects\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+\\banner.main.ad.rit.edu\students\rwh4375\igmprofile\documents\visual studio 2010\Projects\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\banner.main.ad.rit.edu\students\rwh4375\igmprofile\documents\visual studio 2010\Projects\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileA.xnb
+\\banner.main.ad.rit.edu\students\rwh4375\igmprofile\documents\visual studio 2010\Projects\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileB.xnb
+\\banner.main.ad.rit.edu\students\rwh4375\igmprofile\documents\visual studio 2010\Projects\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileC.xnb
+\\banner.main.ad.rit.edu\students\rwh4375\igmprofile\documents\visual studio 2010\Projects\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Fonts\Font.xnb
+\\banner.main.ad.rit.edu\students\rwh4375\igmprofile\documents\visual studio 2010\Projects\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.exe
+\\banner.main.ad.rit.edu\students\rwh4375\igmprofile\documents\visual studio 2010\Projects\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.pdb
+\\banner.main.ad.rit.edu\students\rwh4375\igmprofile\documents\visual studio 2010\Projects\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.exe
+\\banner.main.ad.rit.edu\students\rwh4375\igmprofile\documents\visual studio 2010\Projects\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.pdb
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileA.xnb
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileB.xnb
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileC.xnb
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Fonts\Font.xnb
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.exe
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.pdb
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.exe
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.pdb
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileA.xnb
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileB.xnb
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileC.xnb
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Fonts\Font.xnb
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.exe
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.pdb
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.exe
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.pdb
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileA.xnb
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileB.xnb
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileC.xnb
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Fonts\Font.xnb
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.exe
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.pdb
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.exe
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.pdb
+\\banner.main.ad.rit.edu\students\rwh4375\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\Spritesheet.xnb
+C:\Users\Robbie\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\Spritesheet.xnb
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileA.xnb
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileB.xnb
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileC.xnb
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\Spritesheet.xnb
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Fonts\Font.xnb
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.exe
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.pdb
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.exe
+\\banner.main.ad.rit.edu\students\rpc8248\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.pdb
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileA.xnb
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileB.xnb
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\TileC.xnb
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\Spritesheet.xnb
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Fonts\Font.xnb
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.exe
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\ForeignStarsMapEditor.pdb
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.exe
+C:\Users\Ryan\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\obj\x86\Debug\ForeignStarsMapEditor.pdb
+\\banner.main.ad.rit.edu\students\zab5156\IGMProfile\Desktop\dynasty\ForeignStarsMapEditor\ForeignStarsMapEditor\ForeignStarsMapEditor\bin\x86\Debug\Content\Sprites\Spritesheet.xnb

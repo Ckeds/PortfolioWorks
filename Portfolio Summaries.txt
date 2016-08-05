@@ -1,0 +1,23 @@
+About the projects:
+
+Freshman Project: Also known by the codename Dynasty, this project was made using C# XNA. It is a 2D grid based strategy game. Created by a team of 5. Spring 2012
+
+First Scene: This was the first scene I ever made in Unity. This was group project from a 3D modeling course. Created by a team of 4. Spring 2013
+
+Chain Gang Chase Donator Chart: Using information from the Kickstarter for Chain Gang Chase, I created a visualization of the donator information. Created by myself. Fall 2013
+
+Death Before Dishonor: Made as part of an 8-hour challenge using the theme of rebirth. This is a small game using a Javascript library called Easel.js. Created by a team of 2. January 2014
+
+3D Multiplayer: Game made using Unity 4 game engine with C#. It is a networked multiplayer game using Unity’s network code. Created by a team of 3. Spring 2014
+
+Flash Platformer: Also known as Rebuild.me, this game is made using Actionscript and XML files. This was a group project for a game development class. Created by a team of 6. Fall 2014
+
+Global Game Jam 2015: Using C++ and GLFW (OpenGL), this project was to be a collection of small mini games. The project had a time limit of 48 hours. Created by a team 3. January 2015
+
+Javascript Platformer: Using similar principles to the Flash Platformer, this project was made as part of an advanced Javascript course using javascript, html, and Json files. Created by a team of 2. Fall 2015
+
+Torn DirectX: Using C++ and DirectX, the Tron Disc game was recreated as part of a game graphics programming class. Created by a team of 5. Fall 2015
+
+2D Arena Multiplayer: This little project is a 2D arena shooter made in Unity where the enemies are only visible in the wind particles. Project uses C# scripting and Photon Unity Network (PUN) Created by a team of 3. Spring 2016
+
+3D Carnival: A 3D carnival game using Threed.js, this was made as part of an advanced Javascript course. Created by myself. Spring 2016

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<scenario name="BlueTeamRules" armies="2">
+	<map file="Test.xml" thumbnail="test.png"/>
+	<description text="Made to piss off the red team" />
+	<army team="0">
+		<unit type="infantry" x="0" y="0" direction="E"/>
+		<unit type="infantry" x="0" y="1" direction="S"/>
+		<unit type="infantry" x="1" y="0" direction="E"/>
+		<unit type="infantry" x="1" y="1" direction="S"/>
+	</army>
+	<army team="1">
+		<unit type="infantry" x="0" y="2" direction="E"/>
+		<unit type="infantry" x="0" y="3" direction="E"/>
+		<unit type="infantry" x="1" y="2" direction="E"/>
+		<unit type="infantry" x="1" y="3" direction="E"/>
+		<unit type="infantry" x="2" y="0" direction="E"/>
+		<unit type="infantry" x="2" y="1" direction="E"/>
+		<unit type="infantry" x="2" y="2" direction="E"/>    
+		<unit type="infantry" x="2" y="3" direction="E"/>
+		<unit type="infantry" x="3" y="0" direction="E"/>
+		<unit type="infantry" x="3" y="1" direction="E"/>
+		<unit type="infantry" x="3" y="2" direction="E"/>
+		<unit type="infantry" x="3" y="3" direction="E"/>
+	</army> 
+</scenario>

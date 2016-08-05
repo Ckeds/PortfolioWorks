@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForeignStars", "ForeignStars\ForeignStars\ForeignStars.csproj", "{B807606F-8BCD-40D8-9E77-5E7B507DB099}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForeignStarsContent", "ForeignStars\ForeignStarsContent\ForeignStarsContent.contentproj", "{212003FC-9686-4AD7-B5FF-7D770DE40227}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B807606F-8BCD-40D8-9E77-5E7B507DB099}.Debug|x86.ActiveCfg = Debug|x86
+		{B807606F-8BCD-40D8-9E77-5E7B507DB099}.Debug|x86.Build.0 = Debug|x86
+		{B807606F-8BCD-40D8-9E77-5E7B507DB099}.Release|x86.ActiveCfg = Release|x86
+		{B807606F-8BCD-40D8-9E77-5E7B507DB099}.Release|x86.Build.0 = Release|x86
+		{212003FC-9686-4AD7-B5FF-7D770DE40227}.Debug|x86.ActiveCfg = Debug|x86
+		{212003FC-9686-4AD7-B5FF-7D770DE40227}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
