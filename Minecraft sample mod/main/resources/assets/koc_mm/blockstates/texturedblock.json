@@ -1,0 +1,11 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "koc_mm:texturedblock"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}
+

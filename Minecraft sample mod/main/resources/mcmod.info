@@ -1,0 +1,16 @@
+[
+{
+  "modid": "koc_mm",
+  "name": "Koc Mod",
+  "description": "Lesson plans for week 1.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["William"],
+  "credits": "The Forge and FML guys, and to Kids on Campus",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
